@@ -1,16 +1,46 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    background-image: url(forest_landscape.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(1px);
+}
+#textImage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(0px);
+    color: aliceblue;
+}
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 nav{
-    background-color: #152e68;
-    color: aliceblue;
+    z-index: 1000;
+    background-color: transparent;
+    color: white;
     height: 50px;
     padding: 0 10px;
     font-size: larger;
     text-align: center;
     line-height: 50px;
+    width : 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease-in-out;
+
 }
 nav a{
+    opacity: 1.0;
     margin-right: 10px;
 }
 nav :link{
@@ -21,20 +51,14 @@ nav :visited{
     color: aliceblue;
     text-decoration: none;
 }
-h1{
-    font-weight: bold;
-}
 
-#forest{
-    text-align: center;
+nav:hover{
+    background-color: #152e68;
 }
 
 #EUmapFI{
     width: 35%;
 }
 
-div.content{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #152e68;
-}
+
+
