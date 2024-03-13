@@ -23,7 +23,10 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 nav{ /*block of the navbar*/
+    display: flex;
     z-index: 1000;
+    gap:15px;
+    justify-content: center;
     background-color: transparent;
     color: white;
     height: 50px;
@@ -36,9 +39,8 @@ nav{ /*block of the navbar*/
     top: 0;
     left: 0;
     transition: background-color 0.3s ease-in-out;
-
 }
-nav a{ /* text of the navbar*/
+nav div{ /* text of the navbar*/
     margin-right: 10px;
 }
 nav :link{
@@ -53,6 +55,7 @@ nav:hover{
     background-color: #152e68;
 }
 
+
 #flag{
     position: fixed;
     height: 25px;
@@ -62,12 +65,39 @@ nav:hover{
 #EUmapFI{
     width: 35%;
 }
-.discover-content{
-    z-index: 10000;
-    display: none;
-    position: fixed;
-    background-color: black;
-}
-#discover:hover .discover-content{
+
+#discover-content{
     display: block;
+    opacity: 0;
+    z-index: 10000;
+    transition: opacity 0.3s ease-in-out;
+}
+#discover:hover #discover-content{
+    opacity: 1;
+}
+
+#toFI-content{
+    display: block;
+    opacity: 0;
+    z-index: 10000;
+    transition: opacity 0.3s ease-in-out;
+
+}
+#toFI:hover #toFI-content{
+    opacity: 1;
+}
+.menu{
+    width:150px;
+}
+.submenu{
+    background-color:  #152e68;
+    margin-left: 20px;
+}
+.submenu:hover{
+    background-color: #1f4294;
+}
+
+.content{
+    margin-top: 80px;
+    text-align: center;
 }
