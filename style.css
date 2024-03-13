@@ -4,12 +4,13 @@ html, body {
     margin: 0;
     padding: 0;
 }
-.bg{
+#indexBg{
     background-image: url(forest_landscape.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-    filter: blur(1.3px);
+    /*filter: blur(1.3px);*/
 }
 #textImage{
     position: absolute;
