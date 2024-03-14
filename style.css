@@ -4,7 +4,9 @@ html, body {
     margin: 0;
     padding: 0;
 }
-
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .bg{
     position: relative;
     width: 100%;
@@ -15,6 +17,11 @@ html, body {
     width: 100%;
     height: auto;
     object-fit: cover; /* This ensures the image covers the container without distorting its aspect ratio */
+    filter: blur(1.5px);
+    transition: filter 0.3s ease-in-out;
+}
+.bg img:hover{
+    filter: blur(0);
 }
 .bgText{
     position: absolute;
@@ -25,9 +32,13 @@ html, body {
     color: aliceblue;
 }
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
+.whiteLine{
+    width: 100vw;
+    height: 20px;
+    background-color: white;
+
 }
+
 nav{ /*block of the navbar*/
     display: flex;
     z-index: 1000;
@@ -50,18 +61,16 @@ nav div{ /* text of the navbar*/
     margin-right: 10px;
 }
 nav :link{
-    color: aliceblue;
+    color: white;
     text-decoration: none;
 }
 nav :visited{
-    color: aliceblue;
+    color: white;
     text-decoration: none;
 }
 nav:hover{
     background-color: #152e68;
 }
-
-
 #flag{
     position: fixed;
     height: 25px;
