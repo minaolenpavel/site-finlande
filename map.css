@@ -6,3 +6,6 @@ svg .region{
 svg .region:hover{
     fill:#577eaa;
 }
+#map{
+    text-align: center;
+}
