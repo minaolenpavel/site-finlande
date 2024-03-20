@@ -4,13 +4,10 @@ regionsxsl = parser.parseFromString(`
 	<xsl:template match="/regions">
 	<xsl:for-each select="region">
 		<p>
-		Region
 		<xsl:value-of select="@name"/>
 		<ul>
 		<xsl:for-each select="capital">
-			<li>
-				capital : <xsl:value-of select="."/>
-			</li>
+			- Capitale : <xsl:value-of select="."/>
 		</xsl:for-each>
 		</ul>
 		</p>

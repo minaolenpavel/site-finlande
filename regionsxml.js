@@ -3,6 +3,7 @@ regionsxml = parser.parseFromString(`
 <regions>
   <region name="Îles d'Åland">
     <capital>Mariehamn</capital>
+    <pop>50k</pop>
   </region>
 </regions>
 `, "text/xml");
