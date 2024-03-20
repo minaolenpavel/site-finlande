@@ -130,3 +130,7 @@ svg .region:hover{
 #map{
     text-align: center;
 }
+#desc{
+    margin-top: 150px;
+    text-align: center;
+}
