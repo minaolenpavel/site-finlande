@@ -21,7 +21,7 @@ regionsxsl = parser.parseFromString(`
 	<xsl:template match="/regions">
 	<xsl:for-each select="region">
 		<xsl:element name="p">
-			<xsl:attribute name="id"><xsl:value-of select="name"/>
+			<xsl:attribute name="id"><xsl:value-of select="@name"/>
 			</xsl:attribute>
 				<xsl:value-of select="@name"/>
 				<ul>
